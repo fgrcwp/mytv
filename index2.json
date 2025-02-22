@@ -187,7 +187,15 @@
       "changeable": 1,
       "ext": {}
     },
-
+    {
+      "key": "云盘资源网",
+      "name": "云盘资源网",
+      "type": 3,
+      "api": "csp_YunPanZiYuan",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": ""
+    },
     {
       "key": "XuanFeng",
       "name": "旋风影视",
