@@ -2,18 +2,26 @@
   "spider": "https://androidcatvodspider.netlify.app/jar/custom_spider.jar;md5;917d64f391dbfa4738f0fbc4fc97f6c5",
   "lives": [
     {
-      "name": "直播ipv6",
+      "name": "电视直播",
       "type": "0",
       "pass": true,
-      "url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+      "url": "https://tv.iill.top/m3u/Gather",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "一木",
+      "name": "网络直播",
       "type": "0",
       "pass": true,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/xianyuyimu/TVBOX-/main/TVBox/%E4%B8%80%E6%9C%A8%E7%9B%B4%E6%92%AD%E6%BA%90.txt",
+      "url": "https://tv.iill.top/m3u/Live",
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "直播",
+      "type": "0",
+      "pass": true,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -24,7 +32,8 @@
       "url": "http://home.jundie.top:81/Cat/tv/live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    } ,{
+    },
+    {
       "name": "live",
       "type": "0",
       "pass": true,
