@@ -1,11 +1,11 @@
 {
-  "spider": "https://androidcatvodspider.netlify.app/jar/custom_spider.jar;md5;917d64f391dbfa4738f0fbc4fc97f6c5",
+  "spider": "./custom_spider.jar;md5;917d64f391dbfa4738f0fbc4fc97f6c5",
   "lives": [
     {
       "name": "电视直播",
       "type": "0",
       "pass": true,
-      "url": "https://tv.iill.top/m3u/Gather",
+      "url": "./tvlive.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
