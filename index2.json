@@ -5,7 +5,7 @@
       "name": "电视直播",
       "type": "0",
       "pass": true,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/xiongjian83/TvBox/main/1003.txt",
+      "url": "./tvlive.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -34,10 +34,10 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "live",
+      "name": "18live",
       "type": "0",
       "pass": true,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/xiongjian83/TvBox/main/18/18live.txt",
+      "url": "./18live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
