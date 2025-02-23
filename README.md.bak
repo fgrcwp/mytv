@@ -17,15 +17,13 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### Github代理与加速
 
-1.  GitHub Proxy
+1.  jsdelivr 免费 CDN
+https://cdn.jsdelivr.net/gh/fgrcwp/mytv/index2.json
+
+2.  GitHub Proxy
 https://ghfast.top/https://raw.githubusercontent.com/fgrcwp/mytv/master/index2.json
 
 GitHub Proxy网站 https://ghproxy.link/ 会实时更新可用代理。
-
-2.  jsdelivr 免费 CDN
-https://cdn.jsdelivr.net/gh/fgrcwp/mytv/index2.json
-
-
 3.  xxxx
 
 #### 参与贡献
