@@ -210,7 +210,8 @@
       "name": "火车太堵",
       "type": 3,
       "api": "csp_TaiDu",
-      "searchable": 1
+      "searchable": 1,
+      "filterable": 1
     },
     {
       "key": "LiuGuang",
