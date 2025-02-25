@@ -1,27 +1,19 @@
 {
-  "spider": "./custom_spider.jar;md5;917d64f391dbfa4738f0fbc4fc97f6c5",
+  "spider": "./custom_spider.jar;md5;78cc8efb3c01ffcbcd04b45ad32c01c8",
   "lives": [
     {
-      "name": "电视直播",
+      "name": "直播ipv6",
       "type": "0",
       "pass": true,
-      "url": "./tvlive.txt",
+      "url": "https://fanmingming.com/txt?url=https://live.fanmingming.com/tv/m3u/ipv6.m3u",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "网络直播",
+      "name": "一木",
       "type": "0",
       "pass": true,
-      "url": "https://tv.iill.top/m3u/Live",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "直播",
-      "type": "0",
-      "pass": true,
-      "url": "https://ghfast.top/https://raw.githubusercontent.com/Wirili/IPTV/main/live.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/xianyuyimu/TVBOX-/main/TVBox/%E4%B8%80%E6%9C%A8%E7%9B%B4%E6%92%AD%E6%BA%90.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -32,12 +24,11 @@
       "url": "http://home.jundie.top:81/Cat/tv/live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "18live",
+    } ,{
+      "name": "live",
       "type": "0",
       "pass": true,
-      "url": "./18live.txt",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/xiongjian83/TvBox/main/18/18live.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
@@ -196,15 +187,7 @@
       "changeable": 1,
       "ext": {}
     },
-    {
-      "key": "云盘资源网",
-      "name": "云盘资源网",
-      "type": 3,
-      "api": "csp_YunPanZiYuan",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": ""
-    },
+
     {
       "key": "XuanFeng",
       "name": "旋风影视",
@@ -221,6 +204,13 @@
       "api": "csp_NCat",
       "searchable": 1,
       "filterable": 1
+    },
+    {
+      "key": "TaiDu",
+      "name": "火车太堵",
+      "type": 3,
+      "api": "csp_TaiDu",
+      "searchable": 1
     },
     {
       "key": "LiuGuang",
@@ -844,6 +834,14 @@
       "name": "💞色猫资源💞",
       "type": 1,
       "api": "https://api.maozyapi.com/inc/apijson_vod.php",
+      "searchable": 0,
+      "quickSearch": 0
+    },
+    {
+      "key": "💞辣椒资源💞",
+      "name": "💞辣椒资源💞",
+      "type": 1,
+      "api": "http://api.11bat.com/api.php/provide/vod/",
       "searchable": 0,
       "quickSearch": 0
     }
