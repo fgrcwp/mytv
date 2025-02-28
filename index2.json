@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;33b3d17b00445287be1e7198e7a87618",
+  "spider": "./custom_spider.jar;md5;3de8dad1387dc1a6e047c6975989a7cc",
   "lives": [
     {
       "name": "直播ipv6",
@@ -286,6 +286,15 @@
       "searchable": 0,
       "filterable": 1,
       "ext": "https://w55xy.com/"
+    },
+    {
+      "key": "DY555",
+      "name": "555电影",
+      "type": 3,
+      "api": "csp_DY555",
+      "searchable": 1,
+      "filterable": 1,
+      "ext": "https://zxdy5.top/"
     },
     {
       "key": "DaGongRen",
