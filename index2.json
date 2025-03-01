@@ -81,6 +81,18 @@
       "filterable": 1
     },
     {
+        "key": "kuqimv",
+        "name": "♻超哥丨酷奇",
+        "type": 3,
+        "api": "./js/kuqimv_open.js"
+    },	
+    {
+        "key": "kuqimv",
+        "name": "♻超哥丨LIBVIO",
+        "type": 3,
+        "api": "./js/libvio_open.js"
+    },	
+    {
       "key": "Jianpian",
       "name": "荐片视频",
       "type": 3,
