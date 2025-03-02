@@ -27,6 +27,7 @@ async function init(cfg) {
     var html = await request(HOST);
     var $ = load(html);
     host = $('a.copy-btn:first').attribs.data-clipboard-text;
+	host = 'https://www.ncat21.com';
     //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
@@ -71,7 +72,6 @@ async function homeVod() {
 
 async function category(tid, pg, filter, extend) {
     if (pg <= 0 || typeof(pg) == 'undefined') pg = 1;
-	//https://www.ncat21.com/show/1-----2-2.html 中间的2是按最新排序
     var link = host + '/show/' + tid + '-----2-' + pg + '.html';
     var html = await request(link);
     var $ = load(html);
