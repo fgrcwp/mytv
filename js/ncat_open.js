@@ -58,7 +58,7 @@ async function homeVod() {
     let videos = _.map(items, (item) => {
         var remarks = $($(item).find('div.v-item-bottom > span')[0]).text().trim();
         return {
-            vod_id: $(item).children().first().attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
+            vod_id: $($(item).find('a:first')[0]).attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
             vod_name: $($(item).find('div.v-item-title')[0]).text(),
             vod_pic: $($(item).find('img:first')[0]).attribs.src,
             vod_remarks: remarks || '',
@@ -79,7 +79,7 @@ async function category(tid, pg, filter, extend) {
     let videos = _.map(items, (item) => {
         var remarks = $($(item).find('div.v-item-bottom > span')[0]).text().trim();
         return {
-            vod_id: $(item).children().first().attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
+            vod_id: $($(item).find('a:first')[0]).attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
             vod_name: $($(item).find('div.v-item-title')[0]).text(),
             vod_pic: $($(item).find('img:first')[0]).attribs.src,
             vod_remarks: remarks || '',
