@@ -81,14 +81,14 @@ async function detail(id) {
         vod_content: $('li.hl-col-xs-12:last').text().replace('简介：','').trim(),
     };
     var playMap = {};
-    var tabs = $('div.hl-plays-from > a');
+    var tabs = $('a.hl-tabs-btn');
     var playlists = $('div.hl-tabs-box hl-fadeIn');
     _.each(tabs, (tab, i) => {
-        var from = tab.children[0].data;
+        var from = tab.get(0).text;
         var list = playlists[i];
         list = $(list).find('li');
         _.each(list, (it) => {
-            var title = it.children(0).attribs.text();
+            var title = it.children(0).text;
             var playUrl = it.children(0).attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
