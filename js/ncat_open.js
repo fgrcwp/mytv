@@ -1,7 +1,7 @@
 // 自动从 地址发布页 获取&跳转url地址
 import { load, _ } from './lib/cat.js';
 
-var key = 'wfcat';
+var key = 'ncat';
 var HOST = 'https://dl.ncat3.com/'; // 地址发布页
 var host = '';
 var siteKey = '';
