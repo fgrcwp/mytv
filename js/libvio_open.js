@@ -26,8 +26,7 @@ async function init(cfg) {
     siteType = cfg.stype;
     var html = await request(HOST);
     var $ = load(html);
-    host = $('div.content-top > ul > li').find('a[href]:first')[0].attribs.href;
-	alert('最新地址：' + host);
+    host = $('div.content-top > ul > li').find('a[href]')[0].attribs.href;
     //console.debug('libvio跳转地址 =====>' + urls); // js_debug.log
 }
 
@@ -142,20 +141,20 @@ async function play(flag, id, flags) {
     var html = await request(host + id);
     html = html.match(/r player_.*?=(.*?)</)[1];
     var js = JSON.parse(html);
-    var url = js.url;
-    var from = js.from;
-    var next = js.link_next;
-    var id = js.id;
-    var nid = js.nid;
-    var paurl = await request(host +'/static/player/' + from + '.js');
-    paurl = paurl.match(/ src="(.*?)'/)[1];
-    var purl = paurl + url + '&next=' + next + '&id=' + id + '&nid=' + nid;
-    var playUrl = await request(purl);
-    playUrl = playUrl.match(/var .* = '(.*?)'/)[1];
+    //var url = js.url;
+    //var from = js.from;
+    //var next = js.link_next;
+    //var id = js.id;
+    //var nid = js.nid;
+    //var paurl = await request(host +'/static/player/' + from + '.js');
+    //paurl = paurl.match(/ src="(.*?)'/)[1];
+    //var purl = paurl + url + '&next=' + next + '&id=' + id + '&nid=' + nid;
+    //var playUrl = await request(purl);
+    //playUrl = playUrl.match(/var .* = '(.*?)'/)[1];
     // console.debug('libvio playUrl =====>' + playUrl); // js_debug.log
     return JSON.stringify({
         parse: 0,
-        url: playUrl,
+        url: js.url,
     });
 }
 
