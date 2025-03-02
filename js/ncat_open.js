@@ -40,7 +40,7 @@ async function home(filter) {
         typeId = typeId.substring(typeId.lastIndexOf('/') + 1).replace('.html','');
         return {
             type_id: typeId,
-            type_name: cls.children[0].data,
+            type_name: cls.children[0].text(),
         };
     });
     var filterObj = {};
@@ -51,15 +51,16 @@ async function home(filter) {
 }
 
 async function homeVod() {
-    var html = await request(host);
+    var link = host + '/label/new.html';
+    var html = await request(link);
     var $ = load(html);
     var items = $('div.module-item');
     let videos = _.map(items, (item) => {
         var remarks = $($(item).find('div.v-item-bottom > span')[0]).text().trim();
         return {
             vod_id: $(item).children[0].attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
-            vod_name: $($(item).find('div.v-item-title')[0].text(),
-            vod_pic: $($(item).find('img:first')[0].attribs['src'],
+            vod_name: $($(item).find('div.v-item-title')[0]).text(),
+            vod_pic: $($(item).find('img:first')[0]).attribs.src,
             vod_remarks: remarks || '',
         };
     });
@@ -70,21 +71,21 @@ async function homeVod() {
 
 async function category(tid, pg, filter, extend) {
     if (pg <= 0 || typeof(pg) == 'undefined') pg = 1;
-    var link = host + '/show/' + tid + '-' + (extend.area || '') + '-' + (extend.by || 'time') + '--' + (extend.lang || '') + '----' + pg + '---' + (extend.year || '') + '.html';
+	//https://www.ncat21.com/show/1-----2-2.html 中间的2是按最新排序
+    var link = host + '/show/' + tid + '-----2-' + pg + '.html';
     var html = await request(link);
     var $ = load(html);
-    var items = $('ul.stui-vodlist > li');
+    var items = $('div.module-item');
     let videos = _.map(items, (item) => {
-        var a = $(item).find('a:first')[0];
-        var remarks = $($(item).find('span.pic-text')[0]).text().trim();
+        var remarks = $($(item).find('div.v-item-bottom > span')[0]).text().trim();
         return {
-            vod_id: a.attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
-            vod_name: a.attribs.title,
-            vod_pic: a.attribs['data-original'],
+            vod_id: $(item).children[0].attribs.href.replace(/.*?\/detail\/(.*).html/g, '$1'),
+            vod_name: $($(item).find('div.v-item-title')[0]).text(),
+            vod_pic: $($(item).find('img:first')[0]).attribs.src,
             vod_remarks: remarks || '',
         };
     });
-    var hasMore = $('ul.stui-page__item > li > a:contains(下一页)').length > 0;
+    var hasMore = $('div.page-item-next').length > 0;
     var pgCount = hasMore ? parseInt(pg) + 1 : parseInt(pg);
     return JSON.stringify({
         page: parseInt(pg),
