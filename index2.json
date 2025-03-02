@@ -81,10 +81,10 @@
       "filterable": 1
     },
     {
-      "key": "ncat",
+      "key": "wfcat",
       "name": "♻超哥丨网飞猫",
       "type": 3,
-      "api": "./js/ncat_open.js",
+      "api": "./js/wfcat_open.js",
       "searchable": 1,
       "filterable": 0
     },
