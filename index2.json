@@ -81,6 +81,14 @@
       "filterable": 1
     },
     {
+      "key": "czzy",
+      "name": "♻超哥丨厂长资源",
+      "type": 3,
+      "api": "./js/czzy_open.js",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "108kk",
       "name": "♻超哥丨108kk",
       "type": 3,
@@ -89,13 +97,13 @@
       "filterable": 1
     },
     {
-        "key": "kuqimv",
+        "key": "酷奇MV",
         "name": "♻超哥丨酷奇",
         "type": 3,
         "api": "./js/kuqimv_open.js"
     },	
     {
-        "key": "kuqimv",
+        "key": "libvio",
         "name": "♻超哥丨LIBVIO",
         "type": 3,
         "api": "./js/libvio_open.js"
