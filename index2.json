@@ -81,6 +81,12 @@
       "filterable": 1
     },
     {
+      "key": "108kk",
+      "name": "♻超哥丨108kk",
+      "type": 3,
+      "api": "./js/1080kk_open.js"
+    },
+    {
         "key": "kuqimv",
         "name": "♻超哥丨酷奇",
         "type": 3,
