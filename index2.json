@@ -84,7 +84,9 @@
       "key": "108kk",
       "name": "♻超哥丨108kk",
       "type": 3,
-      "api": "./js/1080kk_open.js"
+      "api": "./js/1080kk_open.js",
+      "searchable": 1,
+      "filterable": 1
     },
     {
         "key": "kuqimv",

@@ -46,10 +46,10 @@ async function category(tid, pg, filter, extend) {
     const link = HOST + '/vodshow/' + (extend.CateId || tid) + '--' + (extend.by || 'time') + '-' + (extend.class || '') + '--' + (extend.letter || '') + '---' + pg + '---' + (extend.year || '') + '.html';//https://www.1080kk.com/vodshow/13--hits-%E5%8F%A4%E8%A3%85-%E5%9B%BD%E8%AF%AD-B------2022.html
     const html = await request(link);
     const $ = load(html);
-    const items = $('ul.myui-vodlist > li');
+    const items = $('ul.hl-vod-list > li');
     let videos = _.map(items, (item) => {
         const it = $(item).find('a:first')[0];
-        const remarks = $($(item).find('span.pic-text text-right')[0]).text().trim();
+        const remarks = $($(item).find('span.hl-lc-1 remarks')[0]).text().trim();
         return {
             vod_id: it.attribs.href.replace(/.*?\/voddetail\/(.*).html/g, '$1'),
             vod_name: it.attribs.title,
@@ -57,7 +57,7 @@ async function category(tid, pg, filter, extend) {
             vod_remarks: remarks || '',
         };
     });
-    const hasMore = $('ul.myui-page > li > a:contains(下一页)').length > 0;
+    const hasMore = $('ul.hl-page-wrap > li > a:contains(下一页)').length > 0;
     const pgCount = hasMore ? parseInt(pg) + 1 : parseInt(pg);
     return JSON.stringify({
         page: parseInt(pg),
@@ -73,24 +73,24 @@ async function detail(id) {
     var $ = load(html);
     var vod = {
         vod_id: id,
-        vod_name: $('h1:first').text().trim(),
-        vod_type: $('.stui-content__detail p:first a').text(),
-        vod_actor: $('.stui-content__detail p:nth-child(3)').text().replace('主演：',''),
-        vod_pic: $('.stui-content__thumb img:first').attr('data-original'),
-        vod_remarks : $('.stui-content__detail p:nth-child(5)').text() || '',
-        vod_content: $('span.detail-content').text().trim(),
+        vod_name: $('h2:first').text().trim(),
+        vod_type: $('a.hl-data-menu hl-full-op').text(),
+        vod_actor: $('li.hl-col-xs-12:nth-child(2)').text().replace('主演：',''),
+        vod_pic: $('span.hl-item-thumb hl-lazy:first').attr('data-original'),
+        vod_remarks : $('span.hl-text-conch').text() || '',
+        vod_content: $('li.hl-col-xs-12:last').text().trim(),
     };
     var playMap = {};
-    var tabs = $('ul.nav-tabs > li > a[data-toggle*=tab]');
-    var playlists = $('ul.myui-content__list');
+    var tabs = $('ul.hl-from-list > li');
+    var playlists = $('div.hl-tabs-box hl-fadeIn');
     _.each(tabs, (tab, i) => {
-        var from = tab.children[0].data;
+        var from = tab.children[1].data;
         var list = playlists[i];
         list = $(list).find('a');
         _.each(list, (it) => {
-            var title = it.children[0].data;
+            var title = it.data;
             var playUrl = it.attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
-            if (title.length == 0) title = it.children[0].data.trim();
+            if (title.length == 0) title = it.data.trim();
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
             }
