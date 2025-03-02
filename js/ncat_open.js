@@ -26,7 +26,7 @@ async function init(cfg) {
     siteType = cfg.stype;
     var html = await request(HOST);
     var $ = load(html);
-    host = ($('a.copy-btn')[0]).attribs.data-clipboard-text;
+    host = $('a.copy-btn:first').attribs.data-clipboard-text;
     //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
