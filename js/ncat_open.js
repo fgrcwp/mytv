@@ -2,7 +2,7 @@
 import { load, _ } from './lib/cat.js';
 
 var key = 'ncat';
-var HOST = 'https://dl.ncat3.com/'; // 地址发布页
+//var HOST = 'https://dl.ncat3.com/'; // 地址发布页
 var host = 'https://www.ncat21.com/';
 var siteKey = '';
 var siteType = 0;
