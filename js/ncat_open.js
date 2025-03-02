@@ -26,8 +26,8 @@ async function init(cfg) {
     siteType = cfg.stype;
     var html = await request(HOST);
     var $ = load(html);
-    host = $('a.copy-btn').attribs.data-clipboard-text;
-    console.debug('ncat跳转地址 =====>' + host); // js_debug.log
+    host = ($('a.copy-btn')[0]).attribs.data-clipboard-text;
+    //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
 async function home(filter) {
