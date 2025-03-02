@@ -27,7 +27,7 @@ async function init(cfg) {
     var html = await request(HOST);
     var $ = load(html);
     host = $('a.copy-btn').attribs.data-clipboard-text;
-    //console.debug('libvio跳转地址 =====>' + urls); // js_debug.log
+    console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
 async function home(filter) {
