@@ -2,7 +2,7 @@
 import { load, _ } from './lib/cat.js';
 
 var key = 'ncat';
-var DLHOST = 'https://dl.ncat3.com/'; // 地址发布页
+var mHOST = 'https://dl.ncat3.com/'; // 地址发布页
 var host = '';
 var siteKey = '';
 var siteType = 0;
@@ -24,7 +24,7 @@ async function request(reqUrl, agentSp) {
 async function init(cfg) {
     siteKey = cfg.skey;
     siteType = cfg.stype;
-    var html = await request(DLHOST);
+    var html = await request(mHOST);
     var $ = load(html);
     host = $('a.copy-btn').attribs['data-clipboard-text'];
     //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
@@ -51,7 +51,7 @@ async function home(filter) {
 }
 
 async function homeVod() {
-    var link = host + '/label/new.html';
+    var link = host + 'label/new.html';
     var html = await request(link);
     var $ = load(html);
     var items = $('div.module-item');
