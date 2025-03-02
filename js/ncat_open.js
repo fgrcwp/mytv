@@ -40,7 +40,7 @@ async function home(filter) {
         typeId = typeId.substring(typeId.lastIndexOf('/') + 1).replace('.html','');
         return {
             type_id: typeId,
-            type_name: cls.children[0].text(),
+            type_name: cls.children[0].data,
         };
     });
     var filterObj = {};
