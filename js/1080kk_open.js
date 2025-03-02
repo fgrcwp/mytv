@@ -75,22 +75,21 @@ async function detail(id) {
         vod_id: id,
         vod_name: $('h2:first').text().trim(),
         vod_type: $('a.hl-data-menu hl-full-op').text(),
-        vod_actor: $('li.hl-col-xs-12:nth-child(2)').text().replace('主演：',''),
+        vod_actor: $('li.hl-col-xs-12:nth-child(3)').text().replace('主演：',''),
         vod_pic: $('span.hl-item-thumb hl-lazy:first').attr('data-original'),
-        vod_remarks : $('span.hl-text-conch').text() || '',
-        vod_content: $('li.hl-col-xs-12:last').text().trim(),
+        vod_remarks : $('span.hl-text-conch').text().replace('状态：','') || '',
+        vod_content: $('li.hl-col-xs-12:last').text().replace('简介：','').trim(),
     };
     var playMap = {};
-    var tabs = $('ul.hl-from-list > li');
+    var tabs = $('div.hl-plays-from > a');
     var playlists = $('div.hl-tabs-box hl-fadeIn');
     _.each(tabs, (tab, i) => {
-        var from = tab.children[1].data;
+        var from = tab.attribs.alt;
         var list = playlists[i];
-        list = $(list).find('a');
+        list = $(list).find('li');
         _.each(list, (it) => {
-            var title = it.data;
-            var playUrl = it.attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
-            if (title.length == 0) title = it.data.trim();
+            var title = it.children(0).attribs.text();
+            var playUrl = it.children(0).attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
             }
