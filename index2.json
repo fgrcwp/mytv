@@ -81,6 +81,14 @@
       "filterable": 1
     },
     {
+      "key": "ncat",
+      "name": "♻超哥丨网飞猫",
+      "type": 3,
+      "api": "./js/ncat_open.js",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "freeok",
       "name": "♻超哥丨FreeOK",
       "type": 3,
