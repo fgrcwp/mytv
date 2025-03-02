@@ -89,7 +89,8 @@ async function detail(id) {
         list = $(list).find('li');
         _.each(list, (it) => {
             var title = it.children(0).data;
-            var playUrl = it.children(0).attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
+            var playUrl = it.attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
+            if (title.length == 0) title = it.children[0].data.trim();
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
             }
