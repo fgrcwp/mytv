@@ -27,6 +27,7 @@ async function init(cfg) {
     var html = await request(HOST);
     var $ = load(html);
     host = $('div.content-top > ul > li').find('a[href]:first')[0].attribs.href;
+	alert('最新地址：' + host);
     //console.debug('libvio跳转地址 =====>' + urls); // js_debug.log
 }
 
