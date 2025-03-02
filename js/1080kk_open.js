@@ -84,7 +84,7 @@ async function detail(id) {
     var tabs = $('div.hl-plays-from > a');
     var playlists = $('div.hl-tabs-box hl-fadeIn');
     _.each(tabs, (tab, i) => {
-        var from = tab.attribs.alt;
+        var from = tab.children[0].data;
         var list = playlists[i];
         list = $(list).find('li');
         _.each(list, (it) => {
