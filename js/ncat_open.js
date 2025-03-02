@@ -27,12 +27,11 @@ async function init(cfg) {
     var html = await request(HOST);
     var $ = load(html);
     host = $('a.copy-btn:first').attribs.data-clipboard-text;
-	host = 'https://www.ncat21.com';
     //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
 async function home(filter) {
-    var html = await request('https://www.ncat21.com');
+    var html = await request(host);
     var $ = load(html);
     var class_parse = $('div.nav-swiper-slide > a[href*=channel]');
     var classes = [];
