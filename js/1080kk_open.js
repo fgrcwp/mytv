@@ -84,11 +84,11 @@ async function detail(id) {
     var tabs = $('a.hl-tabs-btn');
     var playlists = $('div.hl-tabs-box hl-fadeIn');
     _.each(tabs, (tab, i) => {
-        var from = tab.text();
+        var from = tab.children(0).data;
         var list = playlists[i];
         list = $(list).find('li');
         _.each(list, (it) => {
-            var title = it.children(0).text();
+            var title = it.children(0).data;
             var playUrl = it.children(0).attribs.href.replace(/\/vodplay\/(.*).html/g, '$1');
             if (!playMap.hasOwnProperty(from)) {
                 playMap[from] = [];
