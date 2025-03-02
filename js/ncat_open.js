@@ -32,7 +32,7 @@ async function init(cfg) {
 }
 
 async function home(filter) {
-    var html = await request(host);
+    var html = await request('https://www.ncat21.com');
     var $ = load(html);
     var class_parse = $('div.nav-swiper-slide > a[href*=channel]');
     var classes = [];
