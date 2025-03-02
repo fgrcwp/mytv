@@ -26,7 +26,7 @@ async function init(cfg) {
     siteType = cfg.stype;
     var html = await request(HOST);
     var $ = load(html);
-    host = $('a.copy-btn:first').attribs.data-clipboard-text;
+    host = $('a.copy-btn').attribs['data-clipboard-text'];
     //console.debug('ncat跳转地址 =====>' + host); // js_debug.log
 }
 
@@ -36,7 +36,7 @@ async function home(filter) {
     var class_parse = $('div.nav-swiper-slide > a[href*=channel]');
     var classes = [];
     classes = _.map(class_parse, (cls) => {
-        var typeId = cls.attribs['href'];
+        var typeId = cls.attribs.href;
         typeId = typeId.substring(typeId.lastIndexOf('/') + 1).replace('.html','');
         return {
             type_id: typeId,
