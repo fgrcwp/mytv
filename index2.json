@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;4db987196b851d473d17306d66c9a0df",
+  "spider": "./custom_spider.jar;md5;de4218d398b26fbec99502ccaa643254",
   "lives": [
     {
       "name": "直播ipv6",
@@ -247,7 +247,11 @@
       "type": 3,
       "api": "csp_NCat",
       "searchable": 1,
-      "filterable": 1
+      "sniffer": {
+        "enable": true,
+        "timeout": 15,
+        "patterns": ["http.*?\\.m3u8"]
+      }
     },
     {
       "key": "TaiDu",
