@@ -246,12 +246,7 @@
       "name": "网飞猫影视",
       "type": 3,
       "api": "csp_NCat",
-      "searchable": 1,
-      "sniffer": {
-        "enable": true,
-        "timeout": 15,
-        "patterns": ["http.*?\\.m3u8"]
-      }
+      "searchable": 1
     },
     {
       "key": "TaiDu",
