@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;b2a7b00db76406dd5fb9e5a30d811f4b",
+  "spider": "./custom_spider.jar;md5;485f567ade33ebd3031c78ead387db0b",
   "lives": [
     {
       "name": "直播ipv6",
@@ -246,6 +246,13 @@
       "name": "网飞猫影视",
       "type": 3,
       "api": "csp_NCat",
+      "searchable": 1
+    },
+    {
+      "key": "dyTianTang",
+      "name": "电影天堂|蓝光",
+      "type": 3,
+      "api": "csp_dyTianTang",
       "searchable": 1
     },
     {
