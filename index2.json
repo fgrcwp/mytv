@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;485f567ade33ebd3031c78ead387db0b",
+  "spider": "./custom_spider.jar;md5;a4b09c968b1278f6f81ba7d8be4b2ad9",
   "lives": [
     {
       "name": "直播ipv6",
@@ -81,14 +81,6 @@
       "filterable": 1
     },
     {
-      "key": "ncat",
-      "name": "♻超哥丨网飞猫",
-      "type": 3,
-      "api": "./js/ncat_open.js",
-      "searchable": 1,
-      "filterable": 0
-    },
-    {
       "key": "freeok",
       "name": "♻超哥丨FreeOK",
       "type": 3,
@@ -133,87 +125,6 @@
       "filterable": 1
     },
     {
-      "key": "玩偶",
-      "name": "玩偶哥哥",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "changeable": 1,
-      "ext":{"cookie":"ctoken=Uu_mSqcsB3JCCPR9bRrpRaO9; b-user-id=a43d3ffb-d464-8317-a9cb-2e2edb1bb34e; grey-id=20cdfa70-ec25-4b64-448d-482b93a9d97e; grey-id.sig=I6Fk9OAAN6GBkzVY7hjtqT3tvKeT8HBxLQ56YXr-fvg; isQuark=true; isQuark.sig=hUgqObykqFom5Y09bll94T1sS9abT1X-4Df_lzgl8nM; _UP_A4A_11_=wb9c6183729a4b81a069be00fd08d737; _UP_D_=pc; __wpkreporterwid_=0561d154-9686-49d3-9c3e-8f605e539ef9; __pus=230633fbe606c06849c25f0ab2bc2a03AAT13ZCEeVeVjwOMpVJltM6CVi7+LHKCE7yQeV41qUIF6s/AGuei+SXI6x0dIzZcbXESV644+IlmxXgp0V4X1JDk; __kp=16ae2cc0-f053-11ef-a3b9-47accd5c7c54; __kps=AASPZ1+VVqs5R0dTeJk1QnCo; __ktd=0qhnaTZBWuZIvUU6cqnZUw==; __uid=AASPZ1+VVqs5R0dTeJk1QnCo; web-grey-id=2e555b97-5c8d-1ae8-05a8-4fd15acf77b9; web-grey-id.sig=BtnzF-mU2XTJF1eBrRaupsKf-2BaO7uDWm58ktDN7EQ; __itrace_wid=49b98842-95c1-4bf7-1fda-3f1d6c711e0d; __puus=c89e12f7ccf8a98dee4fe11d9d6b6df7AAR0P5XRnIaIqw13c4yECH87GTLE60r2CntJQ9fyYEuTGFQRKGTL4ZAuKyMC1l1IszLAPhVZ/98cT2d8RZVwPjJhbWtVI39o/fS1gvyR7XHaGAGi4Vcf/QnMuBhqZw5d9AJ8RvOrtCLe3GUM6ac4tT1r3ZDyWtJMkoClYJUTEurD9fMJNmQHLdHNgqhD8TfE3ZchPP4kXuUD0e93jlVTH6jS","token":"26fc6787afff43e78b78992e782502f1"}
-    },
-    {
-      "key": "欧歌",
-      "name": "欧歌|Pan",
-      "type": 3,
-      "api": "csp_Mogg",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {}
-    },
-    {
-      "key": "多多影音",
-      "name": "多多影音|Pan",
-      "type": 3,
-      "api": "csp_DuoDuo",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"https://tv.yydsys.top/\"]}"
-    },
-    {
-      "key": "蜡笔盘盘",
-      "name": "蜡笔盘盘|Pan",
-      "type": 3,
-      "api": "csp_NaBi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"https://duopan.fun/\"]}"
-    },
-    {
-      "key": "闪电优汐",
-      "name": "闪电优汐|Pan",
-      "type": 3,
-      "api": "csp_ShanDian",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"http://1.95.79.193/\"]}"
-    },
-    {
-      "key": "特下饭",
-      "name": "特下饭|Pan",
-      "type": 3,
-      "api": "csp_TeXiaFan",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"http://www.xn--ghqy10g1w0a.xyz/\",\"http://www.txfyyda.top/\",]}"
-    },
-    {
-      "key": "小米",
-      "name": "小米UC|Pan",
-      "type": 3,
-      "api": "csp_XiaoMi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"http://mucpan.cc/\",\"http://milvdou.fun/\"]}"
-    },{
-      "key": "至臻视觉",
-      "name": "至臻视觉|Pan",
-      "type": 3,
-      "api": "csp_ZhiZhen",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": "{\"site\": [\"https://mihdr.top/\"]}"
-    },
-
-    {
-      "key": "KuaKeBa",
-      "name": "夸克吧",
-      "type": 3,
-      "api": "csp_KuaKeBa",
-      "searchable": 1,
-      "changeable": 1,
-      "ext":{"cookie":"ctoken=Uu_mSqcsB3JCCPR9bRrpRaO9; b-user-id=a43d3ffb-d464-8317-a9cb-2e2edb1bb34e; grey-id=20cdfa70-ec25-4b64-448d-482b93a9d97e; grey-id.sig=I6Fk9OAAN6GBkzVY7hjtqT3tvKeT8HBxLQ56YXr-fvg; isQuark=true; isQuark.sig=hUgqObykqFom5Y09bll94T1sS9abT1X-4Df_lzgl8nM; _UP_A4A_11_=wb9c6183729a4b81a069be00fd08d737; _UP_D_=pc; __wpkreporterwid_=0561d154-9686-49d3-9c3e-8f605e539ef9; __pus=230633fbe606c06849c25f0ab2bc2a03AAT13ZCEeVeVjwOMpVJltM6CVi7+LHKCE7yQeV41qUIF6s/AGuei+SXI6x0dIzZcbXESV644+IlmxXgp0V4X1JDk; __kp=16ae2cc0-f053-11ef-a3b9-47accd5c7c54; __kps=AASPZ1+VVqs5R0dTeJk1QnCo; __ktd=0qhnaTZBWuZIvUU6cqnZUw==; __uid=AASPZ1+VVqs5R0dTeJk1QnCo; web-grey-id=2e555b97-5c8d-1ae8-05a8-4fd15acf77b9; web-grey-id.sig=BtnzF-mU2XTJF1eBrRaupsKf-2BaO7uDWm58ktDN7EQ; __itrace_wid=49b98842-95c1-4bf7-1fda-3f1d6c711e0d; __puus=c89e12f7ccf8a98dee4fe11d9d6b6df7AAR0P5XRnIaIqw13c4yECH87GTLE60r2CntJQ9fyYEuTGFQRKGTL4ZAuKyMC1l1IszLAPhVZ/98cT2d8RZVwPjJhbWtVI39o/fS1gvyR7XHaGAGi4Vcf/QnMuBhqZw5d9AJ8RvOrtCLe3GUM6ac4tT1r3ZDyWtJMkoClYJUTEurD9fMJNmQHLdHNgqhD8TfE3ZchPP4kXuUD0e93jlVTH6jS","token":"26fc6787afff43e78b78992e782502f1"}
-    },
-    {
       "key": "DianYingYunJi",
       "name": "电影云集",
       "type": 3,
@@ -222,16 +133,6 @@
       "changeable": 1,
       "ext": {}
     },
-    {
-      "key": "KuaKeS",
-      "name": "夸克网盘社",
-      "type": 3,
-      "api": "csp_KuaKeS",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {}
-    },
-
     {
       "key": "XuanFeng",
       "name": "旋风影视",
@@ -243,62 +144,45 @@
     },
     {
       "key": "NCat",
-      "name": "网飞猫影视",
+      "name": "♻网飞猫影视",
       "type": 3,
       "api": "csp_NCat",
       "searchable": 1
     },
     {
+      "key": "MingXing",
+      "name": "♻明星影院",
+      "type": 3,
+      "api": "csp_MingXing",
+      "searchable": 1
+    },
+    {
       "key": "dyTianTang",
-      "name": "电影天堂|蓝光",
+      "name": "♻电影天堂|蓝光",
       "type": 3,
       "api": "csp_dyTianTang",
       "searchable": 1
     },
     {
       "key": "TaiDu",
-      "name": "火车太堵",
+      "name": "♻火车太堵",
       "type": 3,
       "api": "csp_TaiDu",
-      "searchable": 1,
-      "filterable": 1
+      "searchable": 1
     },
     {
       "key": "LiuGuang",
-      "name": "流光影视",
+      "name": "♻流光影视",
       "type": 3,
       "api": "csp_LiuGuang",
       "searchable": 0
     },
     {
       "key": "YS2046",
-      "name": "影视大全",
+      "name": "♻影视大全",
       "type": 3,
       "api": "csp_YS2046",
       "searchable": 0
-    },
-    {
-      "key": "猎手影视",
-      "name": "猎手｜APP",
-      "type": 3,
-      "api": "./py/猎手影视.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "九龙影视",
-      "name": "九龙┃影视",
-      "type": 3,
-      "api": "./py/九龙影视.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://gitee.com/nianxinxz1/spider/raw/master/spider.jar",
-      "playerType": 2
     },
     {
       "key": "ChangZhang",
