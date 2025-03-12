@@ -81,6 +81,22 @@
       "filterable": 1
     },
     {
+      "key": "PTT",
+      "name": "♻超哥丨PTT视频",
+      "type": 3,
+      "api": "csp_PTT",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "TeXiaFan",
+      "name": "♻超哥丨特下饭",
+      "type": 3,
+      "api": "csp_TeXiaFan",
+      "searchable": 1,
+      "filterable": 1
+    },
+    {
       "key": "freeok",
       "name": "♻超哥丨FreeOK",
       "type": 3,
@@ -125,17 +141,8 @@
       "filterable": 1
     },
     {
-      "key": "DianYingYunJi",
-      "name": "电影云集",
-      "type": 3,
-      "api": "csp_DianYingYunJi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {}
-    },
-    {
       "key": "XuanFeng",
-      "name": "旋风影视",
+      "name": "旋风视频",
       "type": 3,
       "api": "csp_XuanFeng",
       "searchable": 1,
@@ -206,7 +213,7 @@
     },
     {
       "key": "TvDy",
-      "name": "电影天堂影视",
+      "name": "TV电影天堂",
       "type": 3,
       "api": "csp_TvDy",
       "searchable": 1,
@@ -246,76 +253,14 @@
       "searchable": 0,
       "filterable": 1,
       "ext": "http://www.hktvyb.vip/"
-
-    },
-    {
-      "key": "NGkt",
-      "name": "瓜瓜",
-      "type": 3,
-      "api": "csp_NG",
-      "searchable": 1,
-      "filterable": 0,
-      "ext": {}
-    },
-    {
-      "key": "JustLive",
-      "name": "JustLive直播",
-      "type": 3,
-      "api": "csp_JustLive",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "Xb6v",
-      "name": "新版6V视频",
-      "type": 3,
-      "api": "csp_Xb6v",
-      "searchable": 1,
-      "filterable": 1
-    },
-    {
-      "key": "ikanbot",
-      "name": "爱看机器人",
-      "type": 3,
-      "api": "csp_Ikanbot",
-      "searchable": 1,
-      "filterable": 0,
-      "ext": "{\"box\": \"TVBox\", \"danmu\": false}"
-    },
-    {
-      "key": "Libvio",
-      "name": "立播影视",
-      "type": 3,
-      "api": "csp_Libvio",
-      "searchable": 1,
-      "filterable": 0,
-      "ext": "{        \"site\": \"https://www.libvio.app\"      }"
-    },
-    {
-      "key": "Ddrk",
-      "name": "低端影视",
-      "type": 3,
-      "api": "csp_Ddrk",
-      "searchable": 1,
-      "filterable": 0,
-      "ext": " {\"site\":\"https://ddys.info/\"}"
     },
     {
       "key": "Ysj",
-      "name": "异世界动漫(不稳定)",
+      "name": "异世界动漫",
       "type": 3,
       "api": "csp_Ysj",
       "searchable": 1,
       "filterable": 1
-    },
-    {
-      "key": "QxiTv",
-      "name": "七喜影视",
-      "type": 3,
-      "api": "csp_QxiTv",
-      "searchable": 1,
-      "changeable": 0,
-      "ext": {}
     },
     {
       "key": "glod",
@@ -325,31 +270,6 @@
       "searchable": 1,
       "changeable": 0,
       "ext": {}
-    }, {
-      "key": "YunPanBa",
-      "name": "云盘吧",
-      "type": 3,
-      "api": "csp_YunPanBa",
-      "searchable": 1,
-      "timeout": 30
-    },
-    {
-      "key": "QiLeSo",
-      "name": "奇乐搜┃搜索",
-      "type": 3,
-      "api": "csp_QiLeSo",
-      "searchable": 1,
-      "changeable": 1,
-      "timeout": 30
-    },
-    {
-      "key": "PanSearch",
-      "name": "盘搜┃搜索",
-      "type": 3,
-      "api": "csp_PanSearch",
-      "searchable": 1,
-      "changeable": 1,
-      "timeout": 30
     },
     {
       "key": "newvision",
@@ -536,32 +456,6 @@
       "ext": {
         "box": "TVBox",
         "cookie": "buvid3=02675249-8ED3-C418-87F5-59E18316459714816infoc; b_nut=1704421014; _uuid=5D435F74-F574-D9AB-62C1-B9294DE465D913102infoc; buvid_fp=e8c5650c749398e9b5cad3f3ddb5081e; buvid4=007E85D1-52C1-7E6E-07CF-837FFBC9349516677-024010502-J5vTDSZDCw4fNnXRejbSVg%3D%3D; rpdid=|()kYJmulRu0J'u~|RRJl)JR; PVID=1; SESSDATA=3be091d3%2C1720332009%2C699ed%2A11CjAcCdwXG5kY1umhCOpQHOn_WP7L9xFBfWO7KKd4BPweodpR6VyIfeNyPiRmkr5jCqsSVjg0R0dZOVVHRUo3RnhPRTZFc3JPbGdiUjFCdHpiRDhiTkticmdKTjVyS1VhbDdvNjFMSDJlbUJydUlRdjFUNGFBNkJlV2ZTa0N1Q1BEVi1QYTQzTUh3IIEC; bili_jct=b0ee7b5d3f27df893545d811d95506d4; DedeUserID=78014638; DedeUserID__ckMd5=4c8c5d65065e468a; enable_web_push=DISABLE; header_theme_version=CLOSE; home_feed_column=5; CURRENT_BLACKGAP=0; CURRENT_FNVAL=4048; b_lsid=75E916AA_18EA1A8D995; bsource=search_baidu; FEED_LIVE_VERSION=V_HEADER_LIVE_NO_POP; browser_resolution=1507-691; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTIzNjk5MTMsImlhdCI6MTcxMjExMDY1MywicGx0IjotMX0.8zQW_fNTCSBlK_JkHnzu3gDw62wuTK1qgKcbGec3swM; bili_ticket_expires=171236985"
-      },
-      "playerType": 0,
-      "type": 3
-    },
-    {
-      "key": "changzhang",
-      "name": "(js)厂长直连┃🏭️",
-      "api": "https://androidcatvodspider.netlify.app/json/js/changzhang.js",
-      "timeout": 30,
-      "ext": {
-        "box": "TVBox",
-        "aliToken": "5aedb82eee4049c19e151becec29ff01",
-        "quarkCookie": "ctoken=Uu_mSqcsB3JCCPR9bRrpRaO9; b-user-id=a43d3ffb-d464-8317-a9cb-2e2edb1bb34e; grey-id=20cdfa70-ec25-4b64-448d-482b93a9d97e; grey-id.sig=I6Fk9OAAN6GBkzVY7hjtqT3tvKeT8HBxLQ56YXr-fvg; isQuark=true; isQuark.sig=hUgqObykqFom5Y09bll94T1sS9abT1X-4Df_lzgl8nM; _UP_A4A_11_=wb9c6183729a4b81a069be00fd08d737; _UP_D_=pc; __wpkreporterwid_=0561d154-9686-49d3-9c3e-8f605e539ef9; __pus=230633fbe606c06849c25f0ab2bc2a03AAT13ZCEeVeVjwOMpVJltM6CVi7+LHKCE7yQeV41qUIF6s/AGuei+SXI6x0dIzZcbXESV644+IlmxXgp0V4X1JDk; __kp=16ae2cc0-f053-11ef-a3b9-47accd5c7c54; __kps=AASPZ1+VVqs5R0dTeJk1QnCo; __ktd=0qhnaTZBWuZIvUU6cqnZUw==; __uid=AASPZ1+VVqs5R0dTeJk1QnCo; web-grey-id=2e555b97-5c8d-1ae8-05a8-4fd15acf77b9; web-grey-id.sig=BtnzF-mU2XTJF1eBrRaupsKf-2BaO7uDWm58ktDN7EQ; __itrace_wid=49b98842-95c1-4bf7-1fda-3f1d6c711e0d; __puus=c89e12f7ccf8a98dee4fe11d9d6b6df7AAR0P5XRnIaIqw13c4yECH87GTLE60r2CntJQ9fyYEuTGFQRKGTL4ZAuKyMC1l1IszLAPhVZ/98cT2d8RZVwPjJhbWtVI39o/fS1gvyR7XHaGAGi4Vcf/QnMuBhqZw5d9AJ8RvOrtCLe3GUM6ac4tT1r3ZDyWtJMkoClYJUTEurD9fMJNmQHLdHNgqhD8TfE3ZchPP4kXuUD0e93jlVTH6jS"
-      },
-      "playerType": 0,
-      "type": 3
-    },
-    {
-      "key": "wogg",
-      "name": "(js)阿里玩偶┃💂",
-      "api": "https://androidcatvodspider.netlify.app/json/js/wogg.js",
-      "timeout": 30,
-      "ext": {
-        "box": "TVBox",
-        "aliToken": "5aedb82eee4049c19e151becec29ff01",
-        "quarkCookie": "ctoken=Uu_mSqcsB3JCCPR9bRrpRaO9; b-user-id=a43d3ffb-d464-8317-a9cb-2e2edb1bb34e; grey-id=20cdfa70-ec25-4b64-448d-482b93a9d97e; grey-id.sig=I6Fk9OAAN6GBkzVY7hjtqT3tvKeT8HBxLQ56YXr-fvg; isQuark=true; isQuark.sig=hUgqObykqFom5Y09bll94T1sS9abT1X-4Df_lzgl8nM; _UP_A4A_11_=wb9c6183729a4b81a069be00fd08d737; _UP_D_=pc; __wpkreporterwid_=0561d154-9686-49d3-9c3e-8f605e539ef9; __pus=230633fbe606c06849c25f0ab2bc2a03AAT13ZCEeVeVjwOMpVJltM6CVi7+LHKCE7yQeV41qUIF6s/AGuei+SXI6x0dIzZcbXESV644+IlmxXgp0V4X1JDk; __kp=16ae2cc0-f053-11ef-a3b9-47accd5c7c54; __kps=AASPZ1+VVqs5R0dTeJk1QnCo; __ktd=0qhnaTZBWuZIvUU6cqnZUw==; __uid=AASPZ1+VVqs5R0dTeJk1QnCo; web-grey-id=2e555b97-5c8d-1ae8-05a8-4fd15acf77b9; web-grey-id.sig=BtnzF-mU2XTJF1eBrRaupsKf-2BaO7uDWm58ktDN7EQ; __itrace_wid=49b98842-95c1-4bf7-1fda-3f1d6c711e0d; __puus=c89e12f7ccf8a98dee4fe11d9d6b6df7AAR0P5XRnIaIqw13c4yECH87GTLE60r2CntJQ9fyYEuTGFQRKGTL4ZAuKyMC1l1IszLAPhVZ/98cT2d8RZVwPjJhbWtVI39o/fS1gvyR7XHaGAGi4Vcf/QnMuBhqZw5d9AJ8RvOrtCLe3GUM6ac4tT1r3ZDyWtJMkoClYJUTEurD9fMJNmQHLdHNgqhD8TfE3ZchPP4kXuUD0e93jlVTH6jS"
       },
       "playerType": 0,
       "type": 3
