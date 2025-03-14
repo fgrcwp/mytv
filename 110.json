@@ -109,7 +109,7 @@
       "type": 3,
       "api": "csp_DaYu",
       "searchable": 1,
-      "playUrl": "json:http://27.124.6.118/btjson.php?url="
+      "parse": ["解析ddyy", "解析NBY"]
     },
     {
       "key": "MingXing",
@@ -730,6 +730,32 @@
       "name": "Json轮询",
       "type": 2,
       "url": "Sequence"
+    },
+    {
+      "name": "解析NBY",
+      "type": "1",
+      "url": "https://api.nbyjson.top:7788/api/?key=f1zZ4HtjvFffnBKDT7&url=",
+      "ext": {
+        "flag": [
+          "NBY"
+        ],
+        "header": {
+          "User-Agent": "Dalvik/2.1.0"
+        }
+      }
+    },
+    {
+      "name": "解析ddyy",
+      "type": 1,
+      "url": "http://27.124.6.118/btjson.php?url=",
+      "ext": {
+        "flag": [
+          "ddyy-"
+        ],
+        "header": {
+          "User-Agent": "okhttp/3.12.0"
+        }
+      }
     },
     {
       "name": "爱心笔记本",
