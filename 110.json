@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;5ecd8cdb4078260d342cedf9238b19ac",
+  "spider": "./custom_spider.jar;md5;378031cd5317ebfa42c2144dc0ffc413",
   "lives": [
     {
       "name": "直播ipv6",
@@ -98,29 +98,36 @@
     },
     {
       "key": "NCat",
-      "name": "♻网飞猫影视",
+      "name": "网飞猫┃影视",
       "type": 3,
       "api": "csp_NCat",
       "searchable": 1
     },
     {
       "key": "DaYu",
-      "name": "♻大鱼影视",
+      "name": "大鱼┃影视",
       "type": 3,
       "api": "csp_DaYu",
       "searchable": 1,
       "ext": "https://dadizhi-1304601780.cos.ap-guangzhou.myqcloud.com/da.txt"
     },
     {
+      "key": "QuBo",
+      "name": "趣播┃影院",
+      "type": 3,
+      "api": "csp_QuBo",
+      "searchable": 1
+    },
+    {
       "key": "MingXing",
-      "name": "♻明星影院",
+      "name": "明星┃影院",
       "type": 3,
       "api": "csp_MingXing",
       "searchable": 1
     },
     {
       "key": "dyTianTang",
-      "name": "♻电影天堂|蓝光",
+      "name": "电影┃天堂",
       "type": 3,
       "api": "csp_dyTianTang",
       "searchable": 1
