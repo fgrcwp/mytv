@@ -2,20 +2,10 @@
   "spider": "./custom_spider.jar;md5;378031cd5317ebfa42c2144dc0ffc413",
   "lives": [
     {
-      "name": "Tianmu",
-      "type":"0",
-      "pass": true,
-      "url": "https://ghfast.top/raw.githubusercontent.com/TianmuTNT/iptv/main/iptv.txt",
-      "epg": "https://epg.v1.mk/json?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png"
-    },
-    {
-      "name": "BMCH",
-      "type":"0",
-      "pass": true,
-      "url": "https://gh.llkk.cc/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u",
-      "epg": "https://epg.v1.mk/json?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png"
+      "name": "直播",
+      "url": "https://gitee.com/qihaoyyds/uzjs/raw/master/直播.m3u",
+      "type": 10,
+      "remark": "f"
     }
   ],
   "sites": [
