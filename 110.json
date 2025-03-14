@@ -1,5 +1,5 @@
 {
-  "spider": "./custom_spider.jar;md5;822ba8be6515b717e6c7304dc683278a",
+  "spider": "./custom_spider.jar;md5;e3327d2f1114bc9ed1177e6b2e3726db",
   "lives": [
     {
       "name": "直播ipv6",
@@ -108,8 +108,7 @@
       "name": "♻大鱼影视",
       "type": 3,
       "api": "csp_DaYu",
-      "searchable": 1,
-      "parse": ["Json并发", "解析ddyy"]
+      "searchable": 1
     },
     {
       "key": "MingXing",
