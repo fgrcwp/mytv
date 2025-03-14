@@ -109,7 +109,7 @@
       "type": 3,
       "api": "csp_DaYu",
       "searchable": 1,
-      "parse": ["解析ddyy", "解析NBY"]
+      "parse": ["Json并发", "解析ddyy"]
     },
     {
       "key": "MingXing",
@@ -737,7 +737,7 @@
       "url": "https://api.nbyjson.top:7788/api/?key=f1zZ4HtjvFffnBKDT7&url=",
       "ext": {
         "flag": [
-          "NBY"
+          "NBY-"
         ],
         "header": {
           "User-Agent": "Dalvik/2.1.0"
